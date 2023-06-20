@@ -3,3 +3,4 @@ streamlit==1.22.0
 notebook
 llama-index
 openai
+llama-hub

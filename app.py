@@ -1,16 +1,15 @@
 import streamlit as st
-from llama_index import VectorStoreIndex, SimpleDirectoryReader, StorageContext, load_index_from_storage
+from llama_index import VectorStoreIndex, SimpleDirectoryReader, StorageContext, GPTVectorStoreIndex
 import os
 import openai
-
+import pickle
 
 @st.cache_resource
 def load_indexes():
-    """load the pipeline object for preprocessing and the ml model"""
-
     # Loading Index from local storage
-    storage_context = StorageContext.from_defaults(persist_dir="./storage")
-    index = load_index_from_storage(storage_context)
+    with open("dune_docs.pkl", "rb") as f:
+        docs = pickle.load(f)
+    index = GPTVectorStoreIndex.from_documents(docs)
     return index
 
 # api key
