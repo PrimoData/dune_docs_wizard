@@ -17,7 +17,9 @@
   "extensions": [
     "ms-python.python",
     "ms-python.vscode-pylance",
-    "github.copilot-nightly"
+    "github.copilot-nightly",
+    "ms-toolsai.jupyter",
+    "ms-vscode-remote.remote-containers"
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
