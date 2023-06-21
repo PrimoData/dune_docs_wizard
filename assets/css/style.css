@@ -3,19 +3,6 @@
     padding-top: 30px
 }
 
-thead tr th:first-child {
-    display: none
-}
-
-tbody th {
-    display: none
-}
-
-thead,
-td {
-    font-size: 12px;
-}
-
 .stButton button {
     background-color: #F1603F;
     color: white;

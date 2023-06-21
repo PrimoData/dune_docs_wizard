@@ -19,7 +19,8 @@
     "ms-python.vscode-pylance",
     "github.copilot-nightly",
     "ms-toolsai.jupyter",
-    "ms-vscode-remote.remote-containers"
+    "ms-vscode-remote.remote-containers",
+    "ms-python.black-formatter"
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
